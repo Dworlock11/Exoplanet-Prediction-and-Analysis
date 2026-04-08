@@ -1,21 +1,19 @@
-# Exoplanet Prediction and Analysis
-This is a project where an exoplanet dataset is analyzed and 
-machine learning models are created to predict exoplanet features and 
-gain insights from them.
+# Exoplanet Machine Learning Project
 
-Classification models such as logistic regression are used to predict 
-exoplanet type (for example, is it Jovian or Terran?) and regression
-models are used to predict exoplanet mass. 
+This project builds machine learning models to predict exoplanet type (e.g., Terran, Jovian) and planet mass using a real-world dataset of observed planetary characteristics. The workflow covers data preprocessing, exploratory analysis, model training, hyperparameter tuning with cross-validation, and evaluation.
 
-The most important features for predicting these characteristics
-are determined and analyzed.
+Multiple models were tested, including logistic/linear regression, decision trees, and random forests. Results show that tree-based models outperform linear models for regression, likely due to nonlinear relationships and a highly skewed target distribution, while classification performance benefits from both linear and nonlinear approaches. Feature importance analysis was used to interpret model behavior and identify key predictive variables.
 
-## Tools
-Python (3.12.12), pandas, matplotlib, numpy, scikit-learn, Jupyter Notebook
+The dataset contains 40+ features and is too large to preview directly on GitHub, but it is included in the repository for download. A preview and summary statistics are available in the notebook.
 
-## Data Usage
-All data is taken from the dataset found here: 
+Dataset: [Exoplanet Dataset (Kaggle)]([your-link-here](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog?resource=download))
 
-https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog?resource=download
+## Structure
+notebooks/analysis.ipynb   # Main analysis and results
+src/preprocessing.py       # Data cleaning & feature engineering
+src/modeling.py            # Model training, tuning, evaluation
+data/                      # Dataset (download required)
 
-I claim no ownership of the data. All rights reserved to the rightful owners.
+## Tech Stack
+- Python (pandas, NumPy, scikit-learn)
+- matplotlib / seaborn
