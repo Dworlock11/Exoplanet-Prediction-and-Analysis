@@ -6,13 +6,17 @@ Multiple models were tested, including logistic/linear regression, decision tree
 
 The dataset contains 40+ features and is too large to preview directly on GitHub, but it is included in the repository for download. A preview and summary statistics are available in the notebook.
 
-Dataset: [Exoplanet Dataset (Kaggle)]([your-link-here](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog?resource=download))
+Dataset: [Exoplanet Dataset (Kaggle)](https://www.kaggle.com/datasets/chandrimad31/phl-exoplanet-catalog?resource=download)
 
 ## Structure
 notebooks/analysis.ipynb   # Main analysis and results
+
 src/preprocessing.py       # Data cleaning & feature engineering
+
 src/modeling.py            # Model training, tuning, evaluation
+
 data/                      # Dataset (download required)
+
 
 ## Tech Stack
 - Python (pandas, NumPy, scikit-learn)
